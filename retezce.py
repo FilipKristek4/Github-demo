@@ -1,0 +1,6 @@
+vysledek = len("slovo")
+print(vysledek)
+nulovy_retezec = len("")
+print (nulovy_retezec)
+uvozovky = len("Pokud je potřeba využít uvozovky, volí se vždy ty opačne oproti těm co ohraničují řetezec. př. 'slovo'")
+print (uvozovky)
