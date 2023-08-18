@@ -1,14 +1,22 @@
-vysledek = len("slovo")
-print(vysledek)
-nulovy_retezec = len("")
-print (nulovy_retezec)
-uvozovky = len("Pokud je potřeba využít uvozovky, volí se vždy ty opačne oproti těm co ohraničují řetezec. př. 'slovo'")
-print (uvozovky)
-lomitko = len ("'běž do háje ty \"čubko\"'")
-print(lomitko)
-print('-\N{GREEK CAPITAL LETTER DELTA}-')
-print('-\N{SECTION SIGN}-')
-print('-\N{GRINNING CAT FACE WITH SMILING EYES}-')
-print('-\x60-')
-print('-\u30C4-')
-print('-\U0001F0BD-')
+print(len('ahoj'))
+print(len("""Ahoj!"""))
+print(len('a b'))
+print(len( ' a b ' ))
+print(len('\N{SNOWMAN}ové'))
+print(len('a\nb'))
+print(len('a\tb'))
+print(len('"\'"'))
+
+
+print(len("""
+abc"""))
+
+
+if True:
+    print(len("""a
+    b"""))
+
+
+print(len('C:\new_dir'))
+
+print(len(f'{len}'))
