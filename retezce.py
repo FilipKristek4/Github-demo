@@ -1,22 +1,8 @@
-print(len('ahoj'))
-print(len("""Ahoj!"""))
-print(len('a b'))
-print(len( ' a b ' ))
-print(len('\N{SNOWMAN}ové'))
-print(len('a\nb'))
-print(len('a\tb'))
-print(len('"\'"'))
-
-
-print(len("""
-abc"""))
-
-
-if True:
-    print(len("""a
-    b"""))
-
-
-print(len('C:\new_dir'))
-
-print(len(f'{len}'))
+slovo = input("vlož slovo: ")
+print(slovo)
+pozice = int(input("zadej pozici písmena: "))
+print(pozice)
+nove_pismeno = input("vlož nove písmeno: ")
+print(nove_pismeno)
+nove_slovo = slovo[:pozice]+nove_pismeno + slovo[pozice +1:]
+print(nove_slovo)
