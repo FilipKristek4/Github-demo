@@ -1,8 +1,4 @@
-slovo = input("vlož slovo: ")
-print(slovo)
-pozice = int(input("zadej pozici písmena: "))
-print(pozice)
-nove_pismeno = input("vlož nove písmeno: ")
-print(nove_pismeno)
-nove_slovo = slovo[:pozice]+nove_pismeno + slovo[pozice +1:]
-print(nove_slovo)
+jmeno = input("Napiš jméno: ")
+prijmeni = input("Napiš přijmení: ")
+inicialy = jmeno[0] + ". "+ prijmeni[0] +"."
+print("Inicialý jsou: " + inicialy.upper())
