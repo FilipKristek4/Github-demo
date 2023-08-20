@@ -1,18 +1,11 @@
-y_a = "ý"
-osloveni = "Filipe"
-podpis = "Váš program"
-vysledek = 15
+def zamen (slovo, pozice, novy_znak):
+    """V daném slově zamění znak na dané pozici za daný nový znak."""
+    zacatek = slovo [:pozice]
+    stred = novy_znak
+    konec = slovo [pozice +1:]
+    nove_slovo = zacatek + stred + konec
+    return nove_slovo
 
-print(f"""Mil{y_a} {osloveni},
-Váš výsledek je {vysledek}.
-S pozdravem,
-{podpis}.""")
 
-sablona = "Ahoj {jmeno}, tvé číslo je {cislo}."
-
-print(sablona.format(jmeno = "Filipe", cislo = 4))
-print(sablona.format(jmeno = "Lucie", cislo = 19))
-print(sablona.format(jmeno = "Milane", cislo = 10))
-
-vypis = "{} krát {} je {}"
-print(vypis.format(3,4,3*4))
+print(zamen("filip", 1, "e"))
+print (zamen("Lucik", 0, "p"))
