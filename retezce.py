@@ -8,3 +8,4 @@ def nacti_cislo():
         
 
 print("cislo je : ", nacti_cislo())
+print("byl to těžky úkol")
