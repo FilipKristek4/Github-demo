@@ -1,11 +1,10 @@
-def zamen (slovo, pozice, novy_znak):
-    """V daném slově zamění znak na dané pozici za daný nový znak."""
-    zacatek = slovo [:pozice]
-    stred = novy_znak
-    konec = slovo [pozice +1:]
-    nove_slovo = zacatek + stred + konec
-    return nove_slovo
+def nacti_cislo():
+    while True :
+        odpoved = input ("Zvol cislo: ")
+        try:
+            return int(odpoved)
+        except ValueError:
+            print("Musi to byt cislo!")
+        
 
-
-print(zamen("filip", 1, "e"))
-print (zamen("Lucik", 0, "p"))
+print("cislo je : ", nacti_cislo())
